@@ -6,27 +6,64 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>ครัวริมเขื่อน</title>
   <style>
+    * { box-sizing: border-box; }
+
     html, body {
       width: 100%;
       height: 100%;
       margin: 0;
       overflow: hidden;
+      font-family: system-ui, sans-serif;
+    }
+
+    .topbar {
+      height: 42px;
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: #fff4d5;
+      color: #382c20;
+      font-size: 13px;
+    }
+
+    .topbar a {
+      flex: 0 0 auto;
+      padding: 7px 10px;
+      border-radius: 9px;
+      background: #f26a21;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
     }
 
     iframe {
       position: fixed;
-      inset: 0;
+      top: 42px;
+      left: 0;
       width: 100%;
-      height: 100%;
+      height: calc(100vh - 42px);
+      height: calc(100dvh - 42px);
       border: 0;
     }
   </style>
 </head>
 <body>
+  <div class="topbar">
+    <span>ครัวริมเขื่อน</span>
+    <a
+      href="https://script.google.com/macros/s/AKfycbzED5j65nDnjY6U_AkRin6Pm1vLGODA52upyTDY-hz4BslIrx1q1AF2wA1z6RidYKDOaQ/exec"
+      target="_blank"
+      rel="noopener">
+      เปิดแอปโดยตรง
+    </a>
+  </div>
+
   <iframe
     title="ครัวริมเขื่อน"
-    src="https://script.google.com/macros/s/AKfycbzED5j65nDnjY6U_AkRin6Pm1vLGODA52upyTDY-hz4BslIrx1q1AF2wA1z6RidYKD0aQ/exec"
-    allow="camera"
+    src="https://script.google.com/macros/s/AKfycbzED5j65nDnjY6U_AkRin6Pm1vLGODA52upyTDY-hz4BslIrx1q1AF2wA1z6RidYKDOaQ/exec"
+    allow="camera; clipboard-read; clipboard-write"
     referrerpolicy="strict-origin-when-cross-origin">
   </iframe>
 </body>
